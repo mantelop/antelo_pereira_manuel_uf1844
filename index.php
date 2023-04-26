@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <title>Examen UF1844 - Manuel Antelo</title>
+  
 </head>
 
 <body>
@@ -30,14 +31,38 @@
     </select><br>
 
     <div id="webs-container">
+      <!-- Solo se muestra si se ha seleccionado "Empleado eventual" -->
       <label for="webs">Webs realizadas (una por línea):</label>
       <textarea id="webs" name="webs"></textarea><br>
     </div>
 
-    <input type="submit" value="Mostrar Datos">
+    <input type="submit" value="Calcular salario">
 
 
   </form>
+
+ <script>
+    let tipoSelect = document.querySelector('#tipo-select');
+    let websContainer = document.querySelector('#webs-container');
+    let tipoEmpleado = document.querySelector('#tipo-empleado');
+
+    websContainer.style.display = 'none';
+
+    tipoSelect.addEventListener('change', function() {
+      if (tipoSelect.value == 'eventual') {
+        websContainer.style.display = 'block';
+      } else {
+        websContainer.style.display = 'none';
+      }
+    });
+
+    resultadosDiv.addEventListener('submit', function(event) {
+      event.preventDefault();
+      resultadosDiv.style.display = 'block';
+
+      tipoEmpleado.textContent = tipoSelect.value;
+    });
+  </script>
 </body>
 
 </html>

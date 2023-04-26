@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $salario_base = 1200;
 
     // Construir el mensaje para el empleado fijo
-    $mensaje = "<p>Empleado: Fijo</p>";
+    $mensaje = "<p><strong>Empleado: Fijo</strong></p>";
     $mensaje .= "<p>Nombre y Apellidos: " . $nombre . ' ' . $apellidos . "</p>";
     $mensaje .= "<p>DNI: " . $dni . "</p>";
     $mensaje .= "<p>Año de Ingreso: " . $anho_ingreso . "</p>";
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   } else if ($tipo === "eventual") {
     // Construir el mensaje para el empleado eventual
-    $mensaje = "<p>Empleado: Eventual</p>";
+    $mensaje = "<p><strong>Empleado: Eventual</strong></p>";
     $mensaje .= "<p>Nombre y Apellidos: " . $nombre . ' ' . $apellidos . "</p>";
     $mensaje .= "<p>DNI: " . $dni . "</p>";
     $mensaje .= "<p>Año de Ingreso: " . $anho_ingreso . "</p>";
