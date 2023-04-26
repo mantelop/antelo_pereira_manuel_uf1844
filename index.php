@@ -36,7 +36,7 @@
       <textarea id="webs" name="webs"></textarea><br>
     </div>
 
-    <input type="submit" value="Calcular salario">
+    <input type="submit" value="Mostrar Datos">
 
 
   </form>
