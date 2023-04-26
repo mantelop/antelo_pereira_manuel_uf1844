@@ -1,0 +1,22 @@
+/* Centramos el formulario */
+form {
+  height: 50vh;
+}
+
+
+
+/* Div para mostrar los resultados */
+.resultados {
+  margin-top: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
